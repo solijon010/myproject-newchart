@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+
+
+@layer base {
+    /* dm-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/dm-sans-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* dm-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/dm-sans-v16-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+body {
+    @apply text-lg text-gray font-normal leading-[1];
+}
+
+}
+
+
+@theme {
+    --color-cream: #f8e9dd;    
+    --color-red: #ec755d;
+    --color-light: #fffbf6;
+    --color-white: #fff;
+    --color-brown: #382314;
+    --color-gray: #92857a;
+    --color-cyan: #76b5bc;
+    --color-hover-cyan: rgba(180, 224, 229, 1);
+    --color-hover-red:  #FF9B86;
+
+    /* border radius */
+
+    --radius-20: 20px;
+
+
+    /* font */
+
+    --default-font-family: "DM Sans" , "Arial", sans-serif;
+
+    /* font size */
+    --text-32: 2rem;
+   
+}
